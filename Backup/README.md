@@ -1,6 +1,18 @@
 # Mise en place de la backup
 
-Création du script.
+## Création d'utilisateur spécifique ayant accès uniquement au contenu à backup sur les machines.
+
+```
+$adduser backupuser
+```
+
+Mise en place des permissions pour l'accès aux fichiers à backup sur chaque machines
+
+```
+$sudo chown backupuser [fichierbackup]
+```
+
+## Création du script.
 
 ```
 $cat backup.sh
