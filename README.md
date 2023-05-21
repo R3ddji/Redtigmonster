@@ -1,4 +1,4 @@
-[Config Machine](ConfigMachine/README.md)
+[Config Machine](Config Machine/README.md)
 
 [Honeypot](HoneyPot/README.md)
 
