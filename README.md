@@ -12,6 +12,10 @@ Lucas Fallous - Adam d'Autheville - Léo Bourin
 
 [Config Machine](ConfigMachine/README.md)
 
+[Stack ELK](ELK/README.md)
+
+[Rsyslog](Rsyslog/README.md)
+
 [Honeypot](HoneyPot/README.md)
 
 [Backup](Backup/README.md)
