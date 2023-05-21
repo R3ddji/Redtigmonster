@@ -30,9 +30,3 @@ cd pentbox-1.8
 - Choisir l'emplacement par défault
 - Activer/Désactiver sound
 
-## Test du HoneyPot
-
-ip a sur la machine avec le honey pot
-sur une autre machine faire ```ftp ipmachienhoneypot ```
-voir le message d'intrusion
-
