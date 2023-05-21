@@ -130,4 +130,13 @@ mai 21 23:49:03 debian-patron npm[885]: - ready started server on 0.0.0.0:3000, 
 
 Le service tourne sur le port 3000 mais nous voulons un service web classique qui tournerait sur le port 80 ou 443 pour l'https, nous allons nous allons donc installer notre reverse proxy: Nginx, celui ci va envoyer le trafic venant de ces ports vers le port 3000 sur lequel écoute le serveur nextjs
 
-ensuite il faut s'occuper du certificat SSL, nous allons le faire avec Certbot
+```
+user1@debian-patron:~$ sudo apt install nginx
+[sudo] Mot de passe de user1 : 
+Lecture des listes de paquets... Fait
+Construction de l'arbre des dépendances... Fait
+Lecture des informations d'état... Fait      
+[...]
+```
+
+ensuite il faut s'occuper du certificat SSL, nous allons le faire avec [Certbot](https://certbot.eff.org/instructions)
