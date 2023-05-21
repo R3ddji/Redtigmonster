@@ -1,0 +1,17 @@
+[Unit]
+Description=NodeJS server
+After=network.target
+
+[Service]
+Type=simple
+User=user1
+Group=user1
+Restart=on-failure
+RestartSec=10
+WorkingDirectory=/home/user1/nextjs-blog
+ExecStartPre=/usr/local/bin/npm install
+ExecStartPre=/usr/local/bin/npm run build
+ExecStart=/usr/local/bin/npm run start
+
+[Install]
+WantedBy=multi-user.target

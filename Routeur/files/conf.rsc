@@ -1,10 +1,3 @@
-# Routeur
-
-Notre routeur est un mikrotik RB5009UG+S+IN, le firmware était déjà à jour lorsque nous l'avons reçu donc pas besoin de le mettre à jour, on peut partir directement à la configuration du routeur, pour cela il suffit d'importer notre fichier de configuration, le fichier comprend également la configuration des clients du VPN, du firewall et de toutes les autres règles, c'est donc très simple d'importer une configuration, cependant je vais quand même expliquer les éléments de la configuration ci dessous
-
-## Configuration
-[fichier de configuration](files/conf.rsc)
-```conf
 /interface bridge
 add admin-mac=A8:6A:BB:69:E7:90 auto-mac=no name=br-wan
 add name=lan1-home
@@ -165,13 +158,3 @@ add action=rsyslogs topics=wireguard
 add action=rsyslogs topics=system
 add action=rsyslogs topics=account
 add action=rsyslogs topics=interface
-```
-## Sources
-lien du routeur:
-
-https://mikrotik.com/product/rb5009ug_s_in
-
-Pour configurer le routeur et le module SFP nous nous sommes aidés de ces posts:
-
-https://lafibre.info/remplacer-livebox/guide-de-connexion-fibre-directement-sur-un-routeur-voire-meme-en-2gbps/
-https://lafibre.info/remplacer-livebox/le-guide-complet-internet-tv-et-telephone-sans-livebox-et-bien-plus-plus/
